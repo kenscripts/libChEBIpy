@@ -35,8 +35,9 @@ class FileSystemCache(ParserBase):
                 os.makedirs(self.path)
 
             url = (
-                "ftp://ftp.ebi.ac.uk/pub/databases/chebi/" + "Flat_file_tab_delimited/"
-            )
+                   "ftp://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/" +
+                   "Flat_file_tab_delimited/"
+                   )
             urlretrieve(urlparse.urljoin(url, filename), filepath)
             urlcleanup()
 

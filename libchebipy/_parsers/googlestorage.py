@@ -71,7 +71,7 @@ class GoogleStorageCache(ParserBase):
         if not self._is_current(filepath):
 
             url = (
-                "ftp://ftp.ebi.ac.uk/pub/databases/chebi/" + "Flat_file_tab_delimited/"
+                "ftp://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/" + "Flat_file_tab_delimited/"
             )
 
             # Upload the original file

@@ -837,7 +837,7 @@ def get_file(filename):
         if not os.path.exists(destination):
             os.makedirs(destination)
 
-        url = 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/' + \
+        url = 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/' + \
             'Flat_file_tab_delimited/'
         urlretrieve(urlparse.urljoin(url, filename), filepath)
         urlcleanup()
